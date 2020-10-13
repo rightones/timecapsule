@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/timecapsule/static/css/main.938ec02d.chunk.css",
+    "main.js": "/timecapsule/static/js/main.49282616.chunk.js",
+    "main.js.map": "/timecapsule/static/js/main.49282616.chunk.js.map",
+    "runtime-main.js": "/timecapsule/static/js/runtime-main.75549a3e.js",
+    "runtime-main.js.map": "/timecapsule/static/js/runtime-main.75549a3e.js.map",
+    "static/js/2.109c90c1.chunk.js": "/timecapsule/static/js/2.109c90c1.chunk.js",
+    "static/js/2.109c90c1.chunk.js.map": "/timecapsule/static/js/2.109c90c1.chunk.js.map",
+    "index.html": "/timecapsule/index.html",
+    "precache-manifest.60b07d2bb386b4b79c0685a599f5f867.js": "/timecapsule/precache-manifest.60b07d2bb386b4b79c0685a599f5f867.js",
+    "service-worker.js": "/timecapsule/service-worker.js",
+    "static/css/main.938ec02d.chunk.css.map": "/timecapsule/static/css/main.938ec02d.chunk.css.map",
+    "static/js/2.109c90c1.chunk.js.LICENSE.txt": "/timecapsule/static/js/2.109c90c1.chunk.js.LICENSE.txt",
+    "static/media/1.svg": "/timecapsule/static/media/1.df40cb92.svg",
+    "static/media/2.svg": "/timecapsule/static/media/2.9091694a.svg",
+    "static/media/3.svg": "/timecapsule/static/media/3.9ee75682.svg",
+    "static/media/4.svg": "/timecapsule/static/media/4.e8d765a5.svg",
+    "static/media/logo.svg": "/timecapsule/static/media/logo.2ed5b50a.svg",
+    "static/media/syringe.1ed2b685.svg": "/timecapsule/static/media/syringe.1ed2b685.svg",
+    "static/media/univsig.svg": "/timecapsule/static/media/univsig.b162fdb2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75549a3e.js",
+    "static/js/2.109c90c1.chunk.js",
+    "static/css/main.938ec02d.chunk.css",
+    "static/js/main.49282616.chunk.js"
+  ]
+}
