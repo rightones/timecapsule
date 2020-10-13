@@ -30,9 +30,9 @@ const ItemContainer = styled.div`
     padding: 15px;
     margin: 10px 5px 10px 5px;
     border-radius: 10px;
-    background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffaa" : "#ffffffcc")};
+    background-color: ${({ theme }) => (theme.isMenuBar ? "" : "#ffffff77")};
     :hover {
-        background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffff44" : "#ffffff99")};
+        background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffff" : "#ffffff33")};
     }
     img {
         width: ${({ theme }) => (theme.isMenuBar ? "30px" : "50px")};
@@ -46,6 +46,7 @@ const ItemContainer = styled.div`
     @media screen and (max-width: 425px) {
         margin: ${({ theme }) => (theme.isMenuBar ? "0 5px 0 5px" : "10px 5px 10px 5px")};
         padding: ${({ theme }) => (theme.isMenuBar ? "5px" : "15px")};
+        background-color: ${({ theme }) => (theme.isMenuBar ? "" : "#ffffffcc")};
     }
     @media screen and (max-width: 350px) {
         padding: ${({ theme }) => (theme.isMenuBar ? "5px" : "15px")};
