@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../topick.us-frontend"
+		},
+		{
+			"path": "../../topick.us-backend"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../react-starter"
+		}
+	],
+	"settings": {}
+}
