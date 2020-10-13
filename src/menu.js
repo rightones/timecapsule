@@ -11,8 +11,13 @@ import { ReactComponent as Syringe } from "./svg/syringe.svg";
 const MenuContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
     grid-auto-flow: column;
     justify-content: center;
+    @media screen and (max-width: 425px) {
+        grid-template-columns: ${({ theme }) => (theme.isMenuBar ? "1fr 1fr 1fr 1fr" : "1fr 1fr")};
+        grid-template-rows: ${({ theme }) => (theme.isMenuBar ? "" : "1fr 1fr")};
+    }
 `;
 
 const ItemContainer = styled.div`
@@ -23,10 +28,11 @@ const ItemContainer = styled.div`
     justify-content: flex-end;
     text-align: center;
     padding: 15px;
-    margin: 10px 0 10px 0;
+    margin: 10px 5px 10px 5px;
     border-radius: 10px;
+    background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffaa" : "#ffffffcc")};
     :hover {
-        background-color: #eee;
+        background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffff44" : "#ffffff99")};
     }
     img {
         width: ${({ theme }) => (theme.isMenuBar ? "30px" : "50px")};
@@ -38,11 +44,11 @@ const ItemContainer = styled.div`
         }
     }
     @media screen and (max-width: 425px) {
-        margin: ${({ theme }) => (theme.isMenuBar ? "0 5px 0 5px" : "10px 0 10px 0")};
+        margin: ${({ theme }) => (theme.isMenuBar ? "0 5px 0 5px" : "10px 5px 10px 5px")};
         padding: ${({ theme }) => (theme.isMenuBar ? "5px" : "15px")};
     }
     @media screen and (max-width: 350px) {
-        padding: ${({ theme }) => (theme.isMenuBar ? "5px" : "10px")};
+        padding: ${({ theme }) => (theme.isMenuBar ? "5px" : "15px")};
     }
 `;
 const Menu = styled.div`
@@ -50,7 +56,7 @@ const Menu = styled.div`
     flex-direction: ${({ theme }) => (theme.isMenuBar ? "row" : "column")};
     align-items: center;
     justify-content: ${({ theme }) => (theme.isMenuBar ? "space-evenly" : "center")};
-    padding: 0px;
+    padding: ${({ theme }) => (theme.isMenuBar ? "0px" : "20px")};
     width: ${({ theme }) => (theme.isMenuBar ? "100%" : "auto")};
     @media screen and (max-width: 768px) {
         flex-wrap: wrap;
@@ -66,11 +72,12 @@ const LogoArea = styled.div`
     align-items: center;
     flex-direction: row;
     margin: 25px;
-    width: ${({ theme }) => (theme.isMenuBar ? "auto" : "100%")};
+    padding: 0 5px 0 5px;
+    width: ${({ theme }) => (theme.isMenuBar ? "auto" : "auto")};
     flex-wrap: wrap;
     border-radius: 10px;
     :hover {
-        background-color: #eee;
+        background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffbb" : "")};
     }
     @media screen and (max-width: 768px) {
         margin: ${({ theme }) => (theme.isMenuBar ? "0px" : "25px")};
@@ -100,7 +107,7 @@ const Banner = styled.div`
     flex-wrap: wrap;
     background-color: #e3f4fc;
     align-self: ${({ theme }) => (theme.isMenuBar ? "auto" : "stretch")};
-    margin: 20px 0 10px 0;
+    margin: 20px 5px 10px 5px;
     border-radius: 10px;
     justify-content: flex-end;
     align-items: center;
@@ -148,10 +155,14 @@ const Item = ({ title, image, index, setTab }) => {
 };
 
 const Container = styled.div`
-    background-color: #fff;
+    position: ${({ theme }) => (theme.isMenuBar ? "fixed" : "relative")};
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
-    border: ${({ theme }) => (theme.isMenuBar ? "2px solid #ddd" : "2px solid #eee")};
+    background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffee" : "#ffffffaa")};
+    border-top: 4px solid #b60005;
 `;
 
 const MenuList = ({ setTab }) => {
@@ -179,7 +190,7 @@ const MenuList = ({ setTab }) => {
                 <MenuContainer>
                     <Item title="타임캡슐" image={CapsuleSVG1} setTab={setTab} index="1" />
                     <Item title="가이드" image={CapsuleSVG2} setTab={setTab} index="2" />
-                    <Item title="커뮤니티" image={CapsuleSVG3} setTab={setTab} index="3" />
+                    <Item title="공지/안내" image={CapsuleSVG3} setTab={setTab} index="3" />
                     <Item title="소개" image={CapsuleSVG4} setTab={setTab} index="4" />
                 </MenuContainer>
             </Menu>

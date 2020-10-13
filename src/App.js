@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
-
+import Background from "./background.jpg";
+import Banner from "./banner.jpg";
 import MenuList from "./menu";
 import "./App.css";
 import UnivSig from "./svg/univsig.svg";
@@ -13,7 +14,9 @@ const MainPageContainer = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: #f9f9f9;
+    background: url(${Background}) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     @media screen and (max-width: 425px) {
         grid-template-rows: 1fr auto auto;
     }
@@ -41,6 +44,13 @@ const PCBlank = styled.div`
     }
 `;
 
+const PictureBanner = styled.div`
+    background: url(${Banner}) no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    height: 350px;
+`;
+
 function App() {
     const [tab, setTab] = useState(0);
     const pageChange = () => {
@@ -57,20 +67,20 @@ function App() {
                 return <TimeCapsule />;
         }
     };
-    const isMenuBar = () => {
-        if (tab === 0) {
-            return { isMenuBar: false };
-        }
-        return { isMenuBar: true };
-    };
     const mainPageChange = () => {
         if (tab === 0) {
             return (
                 <MainPageContainer>
                     <PCBlank />
-                    <MenuList setTab={setTab} isMenuBar={isMenuBar()} />
+                    <MenuList setTab={setTab} />
                     <MobileBlank />
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-start" }}>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "flex-start",
+                        }}
+                    >
                         <img src={UnivSig} width="300px" alt="서강대학교 로고" style={{ margin: "20px" }} />
                     </div>
                 </MainPageContainer>
@@ -79,6 +89,7 @@ function App() {
         return (
             <PageContainer>
                 <MenuList setTab={setTab} />
+                <PictureBanner />
                 {pageChange()}
                 <br />
                 <br />
@@ -96,7 +107,7 @@ function App() {
             </PageContainer>
         );
     };
-    return <ThemeProvider theme={isMenuBar()}>{mainPageChange()}</ThemeProvider>;
+    return <ThemeProvider theme={{ isMenuBar: tab !== 0 }}>{mainPageChange()}</ThemeProvider>;
 }
 
 export default App;
