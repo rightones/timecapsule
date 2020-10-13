@@ -30,13 +30,6 @@ const PageContainer = styled.div`
     background-color: #fff;
 `;
 
-const MobileBlank = styled.div`
-    display: none;
-    @media screen and (max-width: 425px) {
-        display: block;
-    }
-`;
-
 const PCBlank = styled.div`
     display: block;
     @media screen and (max-width: 425px) {
@@ -118,6 +111,7 @@ function App() {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "flex-start",
+                        backgroundColor: "#eee",
                     }}
                 >
                     <img src={UnivSig} width="300px" alt="서강대학교 로고" style={{ margin: "20px" }} />
