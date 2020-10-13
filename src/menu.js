@@ -162,7 +162,7 @@ const Container = styled.div`
     right: 0;
     display: flex;
     justify-content: center;
-    background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffee" : "#ffffffaa")};
+    background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffff" : "#ffffffaa")};
     border-top: 4px solid #b60005;
 `;
 
