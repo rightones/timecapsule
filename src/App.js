@@ -78,10 +78,21 @@ function App() {
                         style={{
                             display: "flex",
                             justifyContent: "center",
-                            alignItems: "flex-start",
+                            flexDirection: "column",
+                            justifyContent: "flex-start",
+                            alignItems: "stretch",
                         }}
                     >
-                        <img src={UnivSig} width="300px" alt="서강대학교 로고" style={{ margin: "20px" }} />
+                        <div
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                backgroundColor: "#ffffffee",
+                                alignItems: "center",
+                            }}
+                        >
+                            <img src={UnivSig} width="300px" alt="서강대학교 로고" />
+                        </div>
                     </div>
                 </MainPageContainer>
             );
@@ -98,8 +109,6 @@ function App() {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "flex-start",
-                        border: "2px solid #eee",
-                        backgroundColor: "#eee",
                     }}
                 >
                     <img src={UnivSig} width="300px" alt="서강대학교 로고" style={{ margin: "20px" }} />

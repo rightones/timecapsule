@@ -32,7 +32,7 @@ const ItemContainer = styled.div`
     border-radius: 10px;
     background-color: ${({ theme }) => (theme.isMenuBar ? "" : "#ffffff77")};
     :hover {
-        background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffff" : "#ffffff33")};
+        background-color: ${({ theme }) => (theme.isMenuBar ? "#00000011" : "#ffffff33")};
     }
     img {
         width: ${({ theme }) => (theme.isMenuBar ? "30px" : "50px")};
@@ -78,7 +78,7 @@ const LogoArea = styled.div`
     flex-wrap: wrap;
     border-radius: 10px;
     :hover {
-        background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffbb" : "")};
+        background-color: ${({ theme }) => (theme.isMenuBar ? "#00000011" : "")};
     }
     @media screen and (max-width: 768px) {
         margin: ${({ theme }) => (theme.isMenuBar ? "0px" : "25px")};
@@ -164,6 +164,7 @@ const Container = styled.div`
     justify-content: center;
     background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffff" : "#ffffffaa")};
     border-top: 4px solid #b60005;
+    box-shadow: ${({ theme }) => (theme.isMenuBar ? "0 4px 4px #00000011" : "")};
 `;
 
 const MenuList = ({ setTab }) => {
