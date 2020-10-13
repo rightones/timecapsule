@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "00b0e4f102e7cb42083962f77beb80a7",
+    "revision": "05156b48ed436423309459cc7130ac1c",
     "url": "/timecapsule/index.html"
   },
   {
-    "revision": "9a3ac645f62c15e61142",
+    "revision": "f2f69c1d5d7e9ccfdb47",
     "url": "/timecapsule/static/css/main.938ec02d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/timecapsule/static/js/2.4191f1e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9a3ac645f62c15e61142",
-    "url": "/timecapsule/static/js/main.93b45ffd.chunk.js"
+    "revision": "f2f69c1d5d7e9ccfdb47",
+    "url": "/timecapsule/static/js/main.f1da22f8.chunk.js"
   },
   {
     "revision": "481d071e0e17f7664063",
