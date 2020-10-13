@@ -18,7 +18,7 @@ const MainPageContainer = styled.div`
     background-size: cover;
     background-position: 50% 50%;
     @media screen and (max-width: 425px) {
-        grid-template-rows: 1fr auto auto;
+        grid-template-rows: auto;
     }
 `;
 
@@ -72,28 +72,37 @@ function App() {
             return (
                 <MainPageContainer>
                     <PCBlank />
-                    <MenuList setTab={setTab} />
-                    <MobileBlank />
                     <div
                         style={{
                             display: "flex",
-                            justifyContent: "center",
                             flexDirection: "column",
                             justifyContent: "flex-start",
                             alignItems: "stretch",
                         }}
                     >
+                        <MenuList setTab={setTab} />
+
                         <div
                             style={{
                                 display: "flex",
                                 flexDirection: "column",
-                                backgroundColor: "#ffffffee",
-                                alignItems: "center",
+                                justifyContent: "flex-start",
+                                alignItems: "stretch",
                             }}
                         >
-                            <img src={UnivSig} width="300px" alt="서강대학교 로고" />
+                            <div
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    backgroundColor: "#ffffffee",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <img src={UnivSig} width="300px" alt="서강대학교 로고" />
+                            </div>
                         </div>
                     </div>
+                    <PCBlank />
                 </MainPageContainer>
             );
         }

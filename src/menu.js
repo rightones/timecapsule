@@ -165,6 +165,7 @@ const Container = styled.div`
     background-color: ${({ theme }) => (theme.isMenuBar ? "#ffffffff" : "#ffffffaa")};
     border-top: 4px solid #b60005;
     box-shadow: ${({ theme }) => (theme.isMenuBar ? "0 4px 4px #00000011" : "")};
+    flex-grow: 1;
 `;
 
 const MenuList = ({ setTab }) => {
