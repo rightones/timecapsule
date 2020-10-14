@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05156b48ed436423309459cc7130ac1c",
+    "revision": "b5c199d00b90af5adddc1103ca5df568",
     "url": "/timecapsule/index.html"
   },
   {
-    "revision": "f2f69c1d5d7e9ccfdb47",
+    "revision": "1db255099a2dcd0224d0",
     "url": "/timecapsule/static/css/main.938ec02d.chunk.css"
   },
   {
-    "revision": "336a43a2b50e2a0be082",
-    "url": "/timecapsule/static/js/2.4191f1e4.chunk.js"
+    "revision": "d74bb1a4b4a9675fe371",
+    "url": "/timecapsule/static/js/2.92aa4fc6.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/timecapsule/static/js/2.4191f1e4.chunk.js.LICENSE.txt"
+    "revision": "301056a7ca16ead6156b38e6917dbb28",
+    "url": "/timecapsule/static/js/2.92aa4fc6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f2f69c1d5d7e9ccfdb47",
-    "url": "/timecapsule/static/js/main.f1da22f8.chunk.js"
+    "revision": "1db255099a2dcd0224d0",
+    "url": "/timecapsule/static/js/main.f15be610.chunk.js"
   },
   {
     "revision": "481d071e0e17f7664063",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "831df4c9ddfecef8605d499265c90b2d",
     "url": "/timecapsule/static/media/banner.831df4c9.jpg"
+  },
+  {
+    "revision": "c4be6a4e7d0e9e429b9ba8573ec9c3d6",
+    "url": "/timecapsule/static/media/innosig.c4be6a4e.svg"
   },
   {
     "revision": "2ed5b50adcc3923ae2108d178f40e88a",

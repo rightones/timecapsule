@@ -1,31 +1,32 @@
 {
   "files": {
     "main.css": "/timecapsule/static/css/main.938ec02d.chunk.css",
-    "main.js": "/timecapsule/static/js/main.f1da22f8.chunk.js",
-    "main.js.map": "/timecapsule/static/js/main.f1da22f8.chunk.js.map",
+    "main.js": "/timecapsule/static/js/main.f15be610.chunk.js",
+    "main.js.map": "/timecapsule/static/js/main.f15be610.chunk.js.map",
     "runtime-main.js": "/timecapsule/static/js/runtime-main.75549a3e.js",
     "runtime-main.js.map": "/timecapsule/static/js/runtime-main.75549a3e.js.map",
-    "static/js/2.4191f1e4.chunk.js": "/timecapsule/static/js/2.4191f1e4.chunk.js",
-    "static/js/2.4191f1e4.chunk.js.map": "/timecapsule/static/js/2.4191f1e4.chunk.js.map",
+    "static/js/2.92aa4fc6.chunk.js": "/timecapsule/static/js/2.92aa4fc6.chunk.js",
+    "static/js/2.92aa4fc6.chunk.js.map": "/timecapsule/static/js/2.92aa4fc6.chunk.js.map",
     "index.html": "/timecapsule/index.html",
-    "precache-manifest.1973d08013c18c81d6c3b41f286f6eb5.js": "/timecapsule/precache-manifest.1973d08013c18c81d6c3b41f286f6eb5.js",
+    "precache-manifest.efabde86bf999bffe597c2d57032f5ab.js": "/timecapsule/precache-manifest.efabde86bf999bffe597c2d57032f5ab.js",
     "service-worker.js": "/timecapsule/service-worker.js",
     "static/css/main.938ec02d.chunk.css.map": "/timecapsule/static/css/main.938ec02d.chunk.css.map",
-    "static/js/2.4191f1e4.chunk.js.LICENSE.txt": "/timecapsule/static/js/2.4191f1e4.chunk.js.LICENSE.txt",
+    "static/js/2.92aa4fc6.chunk.js.LICENSE.txt": "/timecapsule/static/js/2.92aa4fc6.chunk.js.LICENSE.txt",
     "static/media/1.svg": "/timecapsule/static/media/1.df40cb92.svg",
     "static/media/2.svg": "/timecapsule/static/media/2.9091694a.svg",
     "static/media/3.svg": "/timecapsule/static/media/3.9ee75682.svg",
     "static/media/4.svg": "/timecapsule/static/media/4.e8d765a5.svg",
     "static/media/background.jpg": "/timecapsule/static/media/background.9f805c25.jpg",
     "static/media/banner.jpg": "/timecapsule/static/media/banner.831df4c9.jpg",
+    "static/media/innosig.svg": "/timecapsule/static/media/innosig.c4be6a4e.svg",
     "static/media/logo.svg": "/timecapsule/static/media/logo.2ed5b50a.svg",
     "static/media/syringe.1ed2b685.svg": "/timecapsule/static/media/syringe.1ed2b685.svg",
     "static/media/univsig.svg": "/timecapsule/static/media/univsig.b162fdb2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.75549a3e.js",
-    "static/js/2.4191f1e4.chunk.js",
+    "static/js/2.92aa4fc6.chunk.js",
     "static/css/main.938ec02d.chunk.css",
-    "static/js/main.f1da22f8.chunk.js"
+    "static/js/main.f15be610.chunk.js"
   ]
 }
